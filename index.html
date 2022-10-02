@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador-Alura</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img src="img/Logo.png"> 
+    </header>
+    <main>
+        <div class="entrada">
+            <textarea placeholder="Ingrese el texto aqui" class="text-entrada" id="texto-entrada" required></textarea>
+            <p class="recomendacion">Solo letras minúsculas y sin acentos</p>
+            <input type="submit" class="boton-encriptar" value="Encriptar" onclick="encriptar()">
+            <input type="submit" class="boton-desencriptar" value="Desencriptar" onclick="desencriptar();">
+
+        </div>
+        <div class="salida">
+            <div class="text-area-salida">
+                <div class="remplazable">
+                    <p id="texto-salida" class="texto-encriptado"></p>
+                    <div id="muneco-texto"><img src="img/Muñeco.png" class="img-muñeco"
+                            alt="Muñeco buscando algun texto ingresado">
+                        <p class="texto-salida"><strong>Ningun mensaje fue encontrado</strong><br> elige el mensaje que
+                            desee
+                            encriptar o desencriptar</p>
+                    </div>
+                </div>
+                <input type="submit" class="boton-copiar" value="Copiar" onclick="copiartexto('texto-salida');" id="boton-copiar">
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
