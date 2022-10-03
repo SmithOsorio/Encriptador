@@ -41,4 +41,5 @@ function copiartexto(id_elemento) {
     aux.select();
     document.execCommand("copy");
     document.body.removeChild(aux);
+    alert("Texto copiado :)");
 }
