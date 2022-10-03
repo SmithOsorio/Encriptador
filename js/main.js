@@ -7,6 +7,7 @@ function encriptar() {
   var textosalida;
   var textoentrada = document.getElementById("texto-entrada").value;
   ocultarMuñecoTexto();
+  textoentrada = textoentrada.toLowerCase();
   textosalida = textoentrada.replace(/e/gim, "enter");
   textosalida = textosalida.replace(/i/gim, "imes");
   textosalida = textosalida.replace(/a/gim, "ai");
