@@ -27,12 +27,13 @@ header{
     border: 0cm;
     border-radius: 20px;
     font-family: 'Work Sans', sans-serif;
-    
+    box-shadow: 5px 5px 15px 0px grey;
 }
 
 .recomendacion{
     margin-top: 20px;
     padding-left: 10px;
+    font-size: 20px;
     color: rgb(114, 114, 114);
 }
 
@@ -90,11 +91,14 @@ header{
 .text-area-salida{
     
     background: white;
-    height: 600px;
+    height: 800px;
     width: 100%;
+    margin-bottom: 20px;
     border: 0ch;
     border-radius: 20px;
     font-family: 'Work Sans', sans-serif;
+    box-shadow: 5px 5px 15px 0px grey;
+    
 }
 
 .texto-encriptado{
@@ -144,6 +148,10 @@ strong{
     transform: scale(1.05);
 }
 
+@media screen and (max-witdh:1800px){
+
+}
+
 @media screen and (max-width:1350px) {
     .entrada{
         width: 65%;
@@ -152,6 +160,11 @@ strong{
     .salida{
         width: 34%;
     }
+
+    .text-area-salida{
+        height: 700px;
+    }
+
 }
 
 @media screen and (max-width:850px) {
@@ -163,7 +176,16 @@ strong{
         padding-top: 30px;
         width: 100%;
         padding-bottom: 50px;
-        
+
+    }
+
+    .text-area-salida{
+        height: 300px;
+    }
+
+    .img-muñeco{
+        width: 0px;
+        visibility: hidden;
     }
 
     .boton-encriptar{
